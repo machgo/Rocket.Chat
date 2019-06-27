@@ -320,7 +320,7 @@ workflows:
               only: /^[0-9]+\.[0-9]+\.[0-9]+(?:-(?:rc|beta)\.[0-9]+)?$/
       - image-build:
           requires:
-            - deploy
+            - build
           filters:
             branches:
               only: develop
